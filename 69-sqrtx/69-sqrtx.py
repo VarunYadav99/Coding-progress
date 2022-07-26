@@ -14,6 +14,7 @@ class Solution:
 				start = mid+1
 				root = mid
 		return root
+    
 """    class Solution:
 def mySqrt(self, x: int) -> int:
      s=1,e=x
