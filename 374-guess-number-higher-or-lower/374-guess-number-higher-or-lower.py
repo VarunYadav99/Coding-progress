@@ -19,12 +19,15 @@
             else:
                 return mid"""
                 
+
 class Solution:
-    def guessNumber(self, n):
-        l, r = 1, n
-        while True:
-            m = (l+r)//2
-            match guess(m):
-                case  0: return m
-                case  1: l = m+1
-                case -1: r = m-1
+    def guessNumber(self, n: int) -> int:
+        l, r = 0, n
+        while l <= r:
+            m = (l + r)//2
+            if guess(m) == 0: return m
+            elif guess(m) == -1:
+                r = m - 1
+            else:
+                l = m + 1
+        return l
