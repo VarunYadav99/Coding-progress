@@ -1,4 +1,7 @@
-"""class Solution:
+
+"""
+Two pointer 
+class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         left = 0
         
@@ -9,6 +12,7 @@
 
         return left
     """
+"""" O(n)"""
 class Solution:
 	def removeElement(self, nums: List[int], val: int) -> int:
 		length = len(nums)
